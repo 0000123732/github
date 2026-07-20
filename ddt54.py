@@ -38,4 +38,4 @@ with col2:
 st.header(f"측정된 시간: {st.session_state.result:.2f}초")
 
 # 다시 하기 버튼
-st.button("다시 하기", on_click=reset_game
+st.button("다시 하기", on_click=reset_game)
