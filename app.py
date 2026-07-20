@@ -40,7 +40,7 @@ with tab1:
         st.info("너무 튀는 신발은 지양하도록 해요!")
 with tab2:
     st.write("포인트 아이템:")
-    acc= st.multiselect("액세서리 추가", ["모자", "안경", "목걸이", "가방"])
+    acc= st.multiselect("액세서리 추가", ["모자", "안경", "목걸이", "가방"], key="acc")
     with st.expander("액세서리 스타일링 팁 보기"):
         st.warning("너무 많은 악세서리는 투머치가 될 수 있어요.")
 
