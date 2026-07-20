@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("앱 UI 만들")
+st.title("앱 UI 만들기")
 name = st.text_input("이름")
 grade = st.radio("학년", [1,2,3], horizontal=True)
 cls = st.number_iput("반", value=1)
