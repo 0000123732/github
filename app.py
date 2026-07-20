@@ -10,8 +10,6 @@ def reset_all():
     st.session_state.shoes = "스니커즈"
     st.session_state.acc = []
 
-st.button("전체 초기화", on_click=reset_all)
-
 with st.sidebar:
     st.header("프로필")
     user_name = st.text_input("닉네임")
@@ -61,3 +59,5 @@ if st.button("코디 완성하기"):
 with st.expander("코디 연출 팀 영상 보기"):
      st.video("https://www.youtube.com/watch?v=Ydf2N2f7a4o")
      st.write("전문가가 제안하는 코디 연출법을 참고해 보세요.")
+
+st.button("전체 초기화", on_click=reset_all)
