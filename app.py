@@ -10,7 +10,7 @@ with st.sidebar:
 st.title("👗 AI 코디 메이커")
 st.write("사이드바에서 날씨를 먼저 선택하고 코디를 시작하세요!")
 
-st.header("👕 아이템 조합하기)
+st.header("👕 아이템 조합하기")
 col1, col2 = st.columns(2)
 with col1:
     st.subheader("상의")
