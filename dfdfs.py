@@ -162,7 +162,7 @@ wake_time = st.time_input(
 
 
 coffee = st.slider(
-    "☕ 카페인 섭취 횟수",
+    "☕카페인 섭취 횟수",
     0,
     5,
     1
