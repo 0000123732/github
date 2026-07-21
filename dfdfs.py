@@ -203,8 +203,38 @@ def calculate_sleep(sleep, wake):
 
 
 if st.button("✨ 수면 분석하기"):
+
+    if st.button("✨ 수면 분석하기"):
+
+    # 수면 시간 계산
+    sleep_minutes = (
+        wake_time.hour * 60 + wake_time.minute
+        -
+        sleep_time.hour * 60 - sleep_time.minute
+    )
+
+    # 자정을 넘긴 경우 처리
+    if sleep_minutes < 0:
+        sleep_minutes += 24 * 60
+
+    hours = round(
+        sleep_minutes / 60,
+        1
+    )
+
+    # REM 수면 예상
+    rem_sleep = round(
+        hours * 0.22,
+        1
+    )
+
+    recommended_rem = round(
+        hours * 0.25,
+        1
+    )
+
   
-    # REM 수면 예상 계산
+   # REM 수면 예상 계산
     rem_sleep = round(hours * 0.22, 1)
 
     recommended_rem = round(hours * 0.25, 1)
