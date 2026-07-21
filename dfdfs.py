@@ -326,7 +326,7 @@ if st.button("✨ 수면 분석하기"):
      st.write(
         f"🧠 REM 수면이 약 {rem_difference}시간 부족할 수 있습니다."
      )
-   else:
+    else:
      st.write(
         "🧠 예상 REM 수면량이 적절합니다."
      )
