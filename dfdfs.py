@@ -322,14 +322,14 @@ if st.button("✨ 수면 분석하기"):
     st.write(
         "• 매일 비슷한 시간에 자고 일어나는 습관을 만들어보세요."
     )
- if rem_difference > 0:
-    st.write(
+    if rem_difference > 0:
+     st.write(
         f"🧠 REM 수면이 약 {rem_difference}시간 부족할 수 있습니다."
-    )
-else:
-    st.write(
+     )
+   else:
+     st.write(
         "🧠 예상 REM 수면량이 적절합니다."
-    )
+     )
 
-st.write("• 자기 전 휴대폰 사용을 줄여보세요.")
-st.write("• 일정한 시간에 잠드는 습관을 유지하세요.")
+    st.write("• 자기 전 휴대폰 사용을 줄여보세요.")
+    st.write("• 일정한 시간에 잠드는 습관을 유지하세요.")
