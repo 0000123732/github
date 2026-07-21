@@ -31,8 +31,8 @@ def page_todo():
 
 st.markdown("---")
 
-    for i in range(len(st.session_state.todo_list)):
-    col_task, col_btn, col_status = st.columns([4, 1, 1])
+     for i in range(len(st.session_state.todo_list)):
+     col_task, col_btn, col_status = st.columns([4, 1, 1])
       
      with col_task:
         st.write(f"{i+1}. {st.session_state.todo_list[i][0]}")
