@@ -27,7 +27,9 @@ document.getElementById("makePlan").addEventListener("click", function () {
             h--;
 
             if(current==12){
-                result += `12:00 ~ 13:00 🍱 점심<br>`;
+              if (current === 12) {
+    result += `12:00 ~ 13:00 🍱 점심식사<br>`;
+
                 current=13;
             }
 
