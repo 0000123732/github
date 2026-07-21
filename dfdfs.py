@@ -203,6 +203,16 @@ def calculate_sleep(sleep, wake):
 
 
 if st.button("✨ 수면 분석하기"):
+  
+    # REM 수면 예상 계산
+    rem_sleep = round(hours * 0.22, 1)
+
+    recommended_rem = round(hours * 0.25, 1)
+
+    rem_difference = round(
+        recommended_rem - rem_sleep,
+        1
+    )
 
 
     hours = calculate_sleep(
@@ -249,6 +259,16 @@ if st.button("✨ 수면 분석하기"):
 
     ⭐ 수면 점수:
     <b>{score}점</b>
+
+   <br><br>
+
+   🧠 예상 REM 수면:
+   <b>{rem_sleep}시간</b>
+
+   <br>
+
+   권장 REM 수면:
+   <b>{recommended_rem}시간</b>
 
     </div>
     """,
@@ -302,3 +322,15 @@ if st.button("✨ 수면 분석하기"):
     st.write(
         "• 매일 비슷한 시간에 자고 일어나는 습관을 만들어보세요."
     )
+    if rem_difference > 0:
+
+    st.write(
+        f"🧠 REM 수면이 약 {rem_difference}시간 부족할 수 있습니다. 충분한 수면 시간을 확보해보세요."
+    )
+
+else:
+
+    st.write(
+        "🧠 예상 REM 수면량이 적절합니다."
+    )
+
