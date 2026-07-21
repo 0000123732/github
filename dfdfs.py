@@ -204,8 +204,6 @@ def calculate_sleep(sleep, wake):
 
 if st.button("✨ 수면 분석하기"):
 
-    if st.button("✨ 수면 분석하기"):
-
     # 수면 시간 계산
     sleep_minutes = (
         wake_time.hour * 60 + wake_time.minute
